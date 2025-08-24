@@ -6,16 +6,12 @@
 A collection of **lightweight, reusable Vue 3 composables & utilities** to make your development faster, cleaner, and more productive.  
 Think of it as a **developer-friendly utility kit** for Vue.js 🚀
 
-
-
 ## ✨ Features
 
 - 📦 Ready-to-use Vue 3 composables
 - 🪶 Lightweight and tree-shakable
 - 🎯 Focused on practical, everyday utilities
 - ⚡ No extra dependencies (only Vue 3)
-
-
 
 ## 📦 Installation
 
@@ -33,11 +29,11 @@ Import only what you need:
 
 ```vue
 <script setup>
-import { useClipboard, useDebounce, useLocalStorage } from 'vue-dev-utils-kit'
+import { useClipboard, useDebounce, useLocalStorage } from "vue-dev-utils-kit";
 
-const { copy, copied } = useClipboard()
-const search = useDebounce(ref(''), 500)
-const username = useLocalStorage('username', 'Guest')
+const { copy, copied } = useClipboard();
+const search = useDebounce(ref(""), 500);
+const username = useLocalStorage("username", "Guest");
 </script>
 
 <template>
@@ -64,10 +60,11 @@ const username = useLocalStorage('username', 'Guest')
 Copy text to the clipboard.
 
 ```js
-import { useClipboard } from 'vue-dev-utils-kit'
+import { useClipboard } from "vue-dev-utils-kit";
 
-const { copy, copied } = useClipboard()
+const { copy, copied } = useClipboard();
 ```
+
 `copy(text: string)` → Copies the given text.
 
 `copied: Ref<boolean>` → true for 2s after copy.
@@ -77,12 +74,13 @@ const { copy, copied } = useClipboard()
 Debounces a reactive value by given delay.
 
 ```js
-import { useDebounce } from 'vue-dev-utils-kit'
-import { ref } from 'vue'
+import { useDebounce } from "vue-dev-utils-kit";
+import { ref } from "vue";
 
-const input = ref('')
-const debouncedInput = useDebounce(input, 500)
+const input = ref("");
+const debouncedInput = useDebounce(input, 500);
 ```
+
 Returns a debounced `Ref` that updates after the delay.
 
 Useful for search inputs, API calls, etc.
@@ -92,9 +90,9 @@ Useful for search inputs, API calls, etc.
 Reactive state synced with localStorage.
 
 ```js
-import { useLocalStorage } from 'vue-dev-utils-kit'
+import { useLocalStorage } from "vue-dev-utils-kit";
 
-const username = useLocalStorage('username', 'Guest')
+const username = useLocalStorage("username", "Guest");
 ```
 
 `key: string` → localStorage key
@@ -102,7 +100,6 @@ const username = useLocalStorage('username', 'Guest')
 `defaultValue: any` → default value if not found
 
 Returns a `Ref` that is automatically kept in sync with localStorage.
-
 
 ## 🛠 Roadmap
 
@@ -116,7 +113,6 @@ Planned upcoming utilities:
 
 `useFetch` → Simple data fetching composable
 
-
 ## 🤝 Contributing
 
 Contributions are welcome! 🎉
@@ -128,6 +124,6 @@ If you’d like to add new utilities, fix bugs, or improve docs:
 4. Push to branch (git push origin feature/my-new-util)
 5. Open a Pull Request 🚀
 
-📜 License
+## 📜 License
 
 MIT © Saurav Singh
