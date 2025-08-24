@@ -55,8 +55,8 @@ const username = useLocalStorage("username", "Guest");
 
 ## 📚 Available Composables
 
-1. useClipboard
-
+### → `useClipboard`
+   
 Copy text to the clipboard.
 
 ```js
@@ -69,7 +69,7 @@ const { copy, copied } = useClipboard();
 
 `copied: Ref<boolean>` → true for 2s after copy.
 
-2. useDebounce
+### → `useDebounce`
 
 Debounces a reactive value by given delay.
 
@@ -85,7 +85,7 @@ Returns a debounced `Ref` that updates after the delay.
 
 Useful for search inputs, API calls, etc.
 
-3. useLocalStorage
+### → `useLocalStorage`
 
 Reactive state synced with localStorage.
 
