@@ -54,16 +54,17 @@ const username = useLocalStorage("username", "Guest");
 ```
 
 ## 📚 Available Composables
-| Composable                                | Description                                       | Example                                                                                               |
-| ----------------------------------------- | ------------------------------------------------- | ----------------------------------------------------------------------------------------------------- |
-| [**`useLocalStorage`**](#uselocalstorage) | Reactive `localStorage` binding with persistence. | `import { useLocalStorage } from "vue-dev-utils-kit"; const name = useLocalStorage("name", "Saurav")` |
-| [**`useDebounce`**](#usedebounce)         | Debounces a `ref` value.                          | `import { useDebounce } from "vue-dev-utils-kit"; const d = useDebounce(search, 500)`                 |
-| [**`useClipboard`**](#useclipboard)       | Copy text to clipboard with reactive state.       | `import { useClipboard } from "vue-dev-utils-kit"; const { copy } = useClipboard(); copy("Hello")`    |
-| [**`useToggle`**](#usetoggle)             | Reactive boolean toggle helper.                   | `import { useToggle } from "vue-dev-utils-kit"; const { state, toggle } = useToggle(false)`           |
-| [**`useCounter`**](#usecounter)           | Counter with increment, decrement, reset.         | `import { useCounter } from "vue-dev-utils-kit"; const { count, inc } = useCounter(0)`                |
-| [**`useDarkMode`**](#usedarkmode)         | Dark mode toggle synced with system preference.   | `import { useDarkMode } from "vue-dev-utils-kit"; const { isDark, toggle } = useDarkMode()`           |
-| [**`useFetch`**](#usefetch)               | Reactive fetch composable for API calls.          | `import { useFetch } from "vue-dev-utils-kit"; const { data } = useFetch("/api/data")`                |
-| [**`useOnline`**](#useonline)             | Detects online/offline status reactively.         | `import { useOnline } from "vue-dev-utils-kit"; const online = useOnline()`                           |
+| Composable      | Description                                       | Example                                          |
+| --------------- | ------------------------------------------------- | ------------------------------------------------ |
+| useLocalStorage | Reactive `localStorage` binding with persistence. | `const name = useLocalStorage("name", "Saurav")` |
+| useDebounce     | Debounces a `ref` value.                          | `const d = useDebounce(search, 500)`             |
+| useClipboard    | Copy text to clipboard with reactive state.       | `const { copy } = useClipboard(); copy("Hello")` |
+| useToggle       | Reactive boolean toggle helper.                   | `const { state, toggle } = useToggle(false)`     |
+| useCounter      | Counter with increment, decrement, reset.         | `const { count, inc } = useCounter(0)`           |
+| useDarkMode     | Dark mode toggle synced with system preference.   | `const { isDark, toggle } = useDarkMode()`       |
+| useFetch        | Reactive fetch composable for API calls.          | `const { data } = useFetch("/api/data")`         |
+| useOnline       | Detects online/offline status reactively.         | `const online = useOnline()`                     |
+
 
 
 
