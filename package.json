@@ -1,6 +1,6 @@
 {
   "name": "vue-dev-utils-kit",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A collection of useful Vue 3 composables for everyday use",
   "main": "./dist/vue-dev-utils-kit.umd.js",
   "module": "./dist/vue-dev-utils-kit.esm.js",
