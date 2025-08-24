@@ -1,0 +1,42 @@
+{
+  "name": "vue-dev-utils-kit",
+  "version": "1.0.0",
+  "description": "A collection of useful Vue 3 composables for everyday use",
+  "main": "./dist/vue-dev-utils-kit.umd.js",
+  "module": "./dist/vue-dev-utils-kit.esm.js",
+  "exports": {
+    ".": {
+      "import": "./dist/vue-dev-utils-kit.esm.js",
+      "require": "./dist/vue-dev-utils-kit.umd.js"
+    }
+  },
+  "type": "module",
+  "scripts": {
+    "build": "vite build",
+    "dev": "vite",
+    "test": "vitest"
+  },
+  "keywords": [
+    "vue",
+    "composables",
+    "vue3",
+    "utilities",
+    "hooks"
+  ],
+  "peerDependencies": {
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "vite": "^5.4.19"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saurav0896/vue-dev-utils-kit.git"
+  },
+  "author": "Saurav Singh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saurav0896/vue-dev-utils-kit/issues"
+  },
+  "homepage": "https://github.com/saurav0896/vue-dev-utils-kit#readme"
+}
